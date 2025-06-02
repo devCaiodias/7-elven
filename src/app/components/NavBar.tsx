@@ -7,7 +7,6 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
@@ -15,106 +14,124 @@ import { Drawer,DrawerContent, DrawerTrigger } from '@/components/ui/drawer'
 
 export default function NavBar() {
     return (
+        <>
+        <p className='bg-[#14734F] text-white text-center p-2'>We accept SNAP/EBT. <Link href="/locator" className='underline'>Find a Store.</Link></p>
         <div className='flex items-center justify-between m-5 h-16'>
             <div className='flex items-center gap-5'>
                 <Image src={logo} alt='7-eleven logo' />
                 <NavigationMenu className='list-none' >
                 <NavigationMenuItem >
-                <NavigationMenuTrigger className='font-extrabold text-[19px]'>Food</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="group text-black text-[19px] font-extrabold relative m-3 bg-transparent hover:bg-transparent focus:bg-transparent ring-0 focus:ring-0 outline-none">
+                    Food
+                    <span className="block w-6 h-1 bg-[#f37020] absolute left-0 bottom-[-4px] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                </NavigationMenuTrigger>
+
                 <NavigationMenuContent className='flex flex-row gap-6'>
                     <div>
 
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#" className='m-2'>Bakery</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Fresh & Chilled</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Snacks</Link>
                         </NavigationMenuLink>
                     </div>
                     <div>
 
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Pizza</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Hot Foods</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>rollergrill</Link>
                         </NavigationMenuLink>
                     </div>
                     <div>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Candy</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Ice Cream</Link>
                         </NavigationMenuLink>
                     </div>
                 </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem >
-                <NavigationMenuTrigger className='font-extrabold text-[19px]'>Drinks</NavigationMenuTrigger>
+                <NavigationMenuItem className='hover:bg-transparent' >
+                <NavigationMenuTrigger className="group text-black text-[19px] font-extrabold relative m-3 bg-transparent hover:bg-transparent focus:bg-transparent ring-0 focus:ring-0 outline-none">
+                    Drinks
+                    <span className="block w-6 h-1 bg-[#f37020] absolute left-0 bottom-[-4px] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                </NavigationMenuTrigger>
                 <NavigationMenuContent className='flex gap-6'>
                     <div>
 
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#" className='m-2'>Coffee</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Big Gulp®</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Slurpee®</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Bottled Water</Link>
                         </NavigationMenuLink>
                     </div>
                     <div>
 
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Energy Drinks</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Energy Shots</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Sports Drinks</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Cold Pressed Juices</Link>
                         </NavigationMenuLink>
                     </div>
                     <div>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2'>Bottled Tea</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Beer</Link>
                         </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
+                        <NavigationMenuLink asChild className='text-[19px] font-extrabold'>
                         <Link href="#"className='m-2 w-36'>Wine</Link>
                         </NavigationMenuLink>
                     </div>
                 </NavigationMenuContent>
                 </NavigationMenuItem>
                  <NavigationMenuItem>
-                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                        <Link href="/docs" className='font-extrabold text-[19px]'>7REWARDS</Link>
+                    <NavigationMenuLink asChild >
+                        <div className='inline-block text-black group text-[19px] m-3 hover:bg-transparent font-extrabold relative'>
+                            <Link href="/docs">7REWARDS</Link>
+                            <span className="block w-6 h-1 group-hover:bg-orange-500 absolute"></span>
+                        </div>
                     </NavigationMenuLink>
                     </NavigationMenuItem>
                  <NavigationMenuItem>
-                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                        <Link href="/docs" className='font-extrabold text-[19px]'>Order 7NOW Delivery</Link>
+                    <NavigationMenuLink asChild >
+                        <div className='inline-block text-black group text-[19px] m-3 hover:bg-transparent font-extrabold relative'>
+                            <Link href="/docs">Order 7NOW Delivery</Link>
+                            <span className="block w-6 h-1 group-hover:bg-orange-500 absolute"></span>
+                        </div>
                     </NavigationMenuLink>
                     </NavigationMenuItem>
                  <NavigationMenuItem>
-                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                        <Link href="/docs" className='font-extrabold text-[19px]'>Shop 7Collection</Link>
+                    <NavigationMenuLink asChild>
+                        <div className='inline-block text-black group text-[19px] m-3 hover:bg-transparent font-extrabold relative'>
+                            <Link href="/docs">Shop 7Collection</Link>
+                            <span className="block w-6 h-1 group-hover:bg-orange-500 absolute"></span>
+                        </div>
                     </NavigationMenuLink>
                     </NavigationMenuItem>
                 </NavigationMenu>
@@ -150,6 +167,7 @@ export default function NavBar() {
             </DrawerContent>
             </Drawer>
         </div>
+        </>
     )
 }
 
