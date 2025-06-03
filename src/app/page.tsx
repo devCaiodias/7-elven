@@ -1,3 +1,4 @@
+import Content from "./components/Content";
 import NavBar from "./components/NavBar";
 
 
@@ -8,6 +9,7 @@ export default function Home() {
         <NavBar />
 
       {/* Conteudo da pagina */}
+        <Content />
 
       {/* Footer */}
     </>
