@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
+
 import rewards from "../../../public/7rewards.png";
+import redbull from "../../../public/RedBull.png"
+import chipsAhoy from "../../../public/ChipsAhoy.png"
+import butter from "../../../public/Butterfingers.png"
+import vitamin from "../../../public/VitaminWater.png"
 
 export default function Content() {
     return (
@@ -32,6 +38,20 @@ export default function Content() {
                     <p className="mb-4">Use 7REWARDS® when you shop at 7-Eleven® to earn <br /> gameplays. Then, play the Make My Day With $5K</p>
                     <p className="mb-4">in-app game for a chance* to win $5,000.</p>
                     <Button className="px-8 py-5 bg-[#147350] hover:bg-[#438F72] rounded-4xl text-white">Learn More</Button>
+                </div>
+                
+                <div className="flex items-center justify-center">
+                    <Image src={redbull} alt="redbull" width={346.31} height={346.31} />
+                    <div>
+                        <h2 className="font-medium text-2xl mb-2 w-50">3/$8 Red Bull® 12 oz.</h2>
+                        <p className="text-[18px] mb-4 w-52">Buy Red Bull to earn extra gameplays.</p>
+                        <Link href="/locator" className='hover:underline font-bold'>Find a Store.</Link>
+                    </div>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                    <Image src={vitamin} alt="produto" width={115} className="my-2.5 ml-2 mr-14  border-2 hover:border-b-4 hover:border-b-black p-2.5"/>
+                    <Image src={chipsAhoy} alt="produto" width={115} className="my-2.5 ml-2 mr-14 border-2 hover:border-b-4 hover:border-b-black p-2.5"/>
+                    <Image src={butter} alt="produto" width={115} className="my-2.5 ml-2 mr-14 border-2 hover:border-b-4 hover:border-b-black p-2.5"/>
                 </div>
             </div>
         </header>
