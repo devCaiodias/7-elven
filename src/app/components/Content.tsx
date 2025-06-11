@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import rewards from "../../../public/7rewards.png";
 
 export default function Content() {
     return (
@@ -21,7 +23,17 @@ export default function Content() {
                 <button className="text-center py-14 font-bold border-l border-gray-400  hover:bg-gray-300">Coffee</button>
                 <button className="text-center py-14 font-bold border-l border-gray-400  hover:bg-gray-300">Cold Pressed Juices</button>
                 <button className="text-center py-14 font-bold border-l border-gray-400  hover:bg-gray-300">Merch</button>
+            </div>
+
+            <div className="flex items-center justify-between my-14 px-4 py-6">
+                <div className="text-center">
+                    <Image src={rewards} alt="banner rewards" width={483} height={181} className="mb-2.5"/>
+                    <h1 className="text-4xl font-extrabold mb-2">How to Play</h1>
+                    <p className="mb-4">Use 7REWARDS® when you shop at 7-Eleven® to earn <br /> gameplays. Then, play the Make My Day With $5K</p>
+                    <p className="mb-4">in-app game for a chance* to win $5,000.</p>
+                    <Button className="px-8 py-5 bg-[#147350] hover:bg-[#438F72] rounded-4xl text-white">Learn More</Button>
                 </div>
+            </div>
         </header>
     )
 }
