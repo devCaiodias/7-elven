@@ -54,6 +54,22 @@ export default function Content() {
                     <Image src={butter} alt="produto" width={115} className="my-2.5 ml-2 mr-14 border-2 hover:border-b-4 hover:border-b-black p-2.5"/>
                 </div>
             </div>
+
+            <div className="bg-[url('/SummerHiring.png')] h-[100px] bg-center bg-cover flex items-center justify-center">
+                <div className="text-white text-center m-5">
+                    <h2 className="text-3xl font-medium">We`re Hiring!</h2>
+                    <p>Employees can save 15¢/gal.</p>
+                </div>
+                <Button className="px-8 py-5 bg-white hover:bg-black hover:text-white rounded-4xl text-black">Learn More</Button>
+            </div>
+             <div className="bg-[url('/Sweeps.png')] bg-center bg-cover w-full h-[450px] flex items-center justify-items-start px-20 py-4">
+                <div className="text-white flex flex-col gap-4">
+                    <h1 className="text-4xl font-extrabold w-96 mb-2">Buy Dr Pepper with 7REWARDS® for a Chance** to win tickets to see Jurassic World Rebirth in theaters.</h1>
+                    <p className="w-72">Sip your way to a seat. Daily winners through 7/30!</p>
+                    
+                   <Button className="px-8 py-5 bg-white hover:bg-black hover:text-white rounded-4xl w-28 text-black">Learn More</Button>
+                </div>
+            </div>
         </header>
     )
 }
